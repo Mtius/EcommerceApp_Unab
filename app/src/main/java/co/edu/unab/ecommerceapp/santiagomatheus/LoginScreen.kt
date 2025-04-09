@@ -11,6 +11,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Email
+import androidx.compose.material.icons.filled.Lock
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Icon
@@ -29,6 +31,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import co.edu.unab.ecommerceapp.santiagomatheus.ui.theme.EcommerceAppTheme
 
+@Preview
 @Composable
 fun LoginScreen() {
     Scaffold { valuesPadding ->
@@ -41,7 +44,7 @@ fun LoginScreen() {
             verticalArrangement = Arrangement.Center
         ) {
             Image(
-                painter = painterResource(id = R.drawable./**/),
+                painter = painterResource(id = R.drawable.logo_unab),
                 contentDescription = "logo Unab",
                 modifier = Modifier.size(200.dp)
             )
@@ -66,7 +69,7 @@ fun LoginScreen() {
                 modifier = Modifier.fillMaxWidth(),
                 leadingIcon = {
                     Icon(
-                        imageVector = Icons.Default./**/,
+                        imageVector = Icons.Default.Email,
                         contentDescription = "Email",
                         tint = Color(0xFFFF9900)
                     )
@@ -85,7 +88,7 @@ fun LoginScreen() {
                 modifier = Modifier.fillMaxWidth(),
                 leadingIcon = {
                     Icon(
-                        imageVector = Icons.Default./**/,
+                        imageVector = Icons.Default.Lock,
                         contentDescription = "Contraseña",
                         tint = Color(0xFFFF9900)
                     )
