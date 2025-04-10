@@ -12,7 +12,7 @@ fun HomeScreen(){
     Scaffold { innerPadding ->
         Column (modifier = Modifier.padding(innerPadding)){
             Text(
-                "HOME SCREEN"
+                "HOME SCREEN",
                 fontSize = 50.sp
             )
         }
