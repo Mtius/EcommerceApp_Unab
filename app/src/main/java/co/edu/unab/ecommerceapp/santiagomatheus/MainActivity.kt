@@ -11,6 +11,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import co.edu.unab.ecommerceapp.santiagomatheus.ui.theme.EcommerceAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -19,9 +23,26 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             EcommerceAppTheme {
-                LoginScreen()
 
-                RegisterScreen()
+                val myNavController = rememberNavController()
+                val myStartDestination = "Login"
+
+                NavHost(
+                    navController = myNavController,
+                    startDestination = myStartDestination,
+                    modifier = Modifier.fillMaxSize(),
+                ){
+                    composable("login"){
+                        LoginScreen(myNavController)
+                    }
+                    composable("register"){
+                        RegisterScreen()
+                    }
+
+                }
+
+
+                LoginScreen()
 
             }
         }
