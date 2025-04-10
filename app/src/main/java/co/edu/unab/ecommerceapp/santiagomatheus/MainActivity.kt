@@ -21,6 +21,8 @@ class MainActivity : ComponentActivity() {
             EcommerceAppTheme {
                 LoginScreen()
 
+                RegisterScreen()
+
             }
         }
     }
