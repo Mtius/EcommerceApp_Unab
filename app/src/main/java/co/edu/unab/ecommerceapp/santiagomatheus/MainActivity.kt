@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
                 }
 
 
-                LoginScreen()
+               // LoginScreen()
 
             }
         }

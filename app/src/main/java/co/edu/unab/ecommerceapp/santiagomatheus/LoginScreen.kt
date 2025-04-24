@@ -34,7 +34,7 @@ import co.edu.unab.ecommerceapp.santiagomatheus.ui.theme.EcommerceAppTheme
 
 
 @Composable
-fun LoginScreen(navController: NavController ?= null) {
+fun LoginScreen(navController: NavController ) {
     Scaffold { valuesPadding ->
         Column(
             modifier = Modifier
@@ -100,7 +100,9 @@ fun LoginScreen(navController: NavController ?= null) {
             Spacer(modifier = Modifier.height(24.dp))
 
             Button(
-                onClick = {},
+                onClick = {
+                    navController.navigate("home")
+                },
                 colors = ButtonDefaults.buttonColors(
                     containerColor = Color(0xFFFF9900)
                 ),

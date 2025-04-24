@@ -40,7 +40,7 @@ import co.edu.unab.ecommerceapp.santiagomatheus.ui.theme.EcommerceAppTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun RegisterScreen(navController: NavController ?= null ){
+fun RegisterScreen(navController: NavController){
     Scaffold(
         topBar = {
             TopAppBar(
@@ -179,6 +179,6 @@ fun RegisterScreen(navController: NavController ?= null ){
 @Composable
 fun RegisterScreenPreview(){
     EcommerceAppTheme{
-        RegisterScreen()
+
     }
 }
